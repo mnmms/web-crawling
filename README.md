@@ -1,7 +1,7 @@
 # Web Crawling
 
-```bash
-[Project root]
+```
+# [Project root]
   ├── dist
   │   └──bundle.js
   ├── src
