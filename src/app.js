@@ -1,6 +1,6 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
-const config = require('./config');
+const config = require('../config');
 
 async function getHTML(keyword) {
   let url = await config.url + encodeURI(keyword);
@@ -12,7 +12,7 @@ async function getHTML(keyword) {
   }
 }
 
-async function getAllInfo(keyword) {
+export async function getAllInfo(keyword) {
   let contentsList = [];
 
   await getHTML(keyword)
@@ -45,7 +45,3 @@ async function getAllInfo(keyword) {
   return contentsList;
 }
 
-
-
-/* "자바스크립트" 컨텐츠 조회 */
-getAllInfo("자바스크립트");
