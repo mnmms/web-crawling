@@ -1,5 +1,6 @@
 # Web Crawling
 
+```bash
 [Project root]
   ├── dist
   │   └──bundle.js
@@ -12,3 +13,4 @@
   ├── package.json
   ├── README.md
   └── webpack.config.js
+```
