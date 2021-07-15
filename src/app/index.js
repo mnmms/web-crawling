@@ -1,10 +1,17 @@
 // import { getAllInfo } from './app';
 
-// const root = document.getElementById("root");
+
+function render() {
+const root = document.getElementById("root");
 // const div = document.createElement("div");
-// div.innerHTML = `${getAllInfo("자바스크립트")}`;
+const input = document.createElement("input");
+const button = document.createElement("button");
 
-// root.appendChild(div);
+//  div.innerHTML = `${getAllInfo("자바스크립트")}`;
+button.innerText = '버튼 클릭!';
 
-console.log("test");
-// console.log(getAllInfo("자바스크립트"));
+root.appendChild(input);
+root.appendChild(button);
+}
+
+window.addEventListener("onLoad", render());

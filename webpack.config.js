@@ -17,13 +17,13 @@ module.exports = {
           overlay: true, //빌드시 에러 or 경로를 브라우저 화면에 표시
           stats: "errors-only", //메세지 출력 옵션
           // historyApiFallBack: true, //히스토리 API 사용하는 SPA 개발시 사용, 404 발생시 index.html로 리다이렉트
-          filename: "bundle.js",
-          proxy: {
-               "/api": {
-                    target: "http://localhost:8080/api",
-                    secure: false,
-                    changeOrigin: true
-               }
+          filename: path.join(__dirname, "src/server/index.js"),
+          proxy: { //CORS 정책 우회 가능
+               // "/api": {
+               //      target: "https://www.inflearn.com",
+               //      secure: false,
+               //      changeOrigin: true
+               // }
           }
      },
 
