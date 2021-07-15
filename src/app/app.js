@@ -1,6 +1,6 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
-const config = require('../config');
+const config = require('../../config');
 
 async function getHTML(keyword) {
   let url = await config.url + encodeURI(keyword);
