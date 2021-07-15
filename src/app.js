@@ -42,6 +42,7 @@ export async function getAllInfo(keyword) {
     })
   })
   .catch(err => console.log(err));
+  
   return contentsList;
 }
 
