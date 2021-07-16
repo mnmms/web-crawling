@@ -6,7 +6,7 @@
   ├── dist
   │   └──bundle.js
   ├── src
-  │   └──app.js  <= you need to modify this file.
+  │   └──scraping.js
   │   └──index.js
   ├── static
   │   └──index.html
