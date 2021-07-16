@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const nodeExternals = require("webpack-node-externals");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
      mode: "development",
@@ -18,13 +18,13 @@ module.exports = {
           stats: "errors-only", //메세지 출력 옵션
           // historyApiFallBack: true, //히스토리 API 사용하는 SPA 개발시 사용, 404 발생시 index.html로 리다이렉트
           filename: path.join(__dirname, "src/server/index.js"),
-          proxy: { //CORS 정책 우회 가능
-               // "/api": {
-               //      target: "https://www.inflearn.com",
-               //      secure: false,
-               //      changeOrigin: true
-               // }
-          }
+          // proxy: { //CORS 정책 우회 가능
+          //      "/": {
+          //           target: "https://www.inflearn.com",
+          //           secure: false,
+          //           changeOrigin: true
+          //      }
+          // }
      },
 
      entry: __dirname + "/src/app/index.js",
