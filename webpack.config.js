@@ -2,10 +2,13 @@ const webpack = require("webpack");
 const path = require("path");
 const nodeExternals = require("webpack-node-externals");
 // const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
      mode: "development",
-     // plugins: [new CleanWebpackPlugin("bundle.js")],
+     plugins: [
+          // new CleanWebpackPlugin("./dist/bundle.js"),  //error
+          new HtmlWebpackPlugin({ template: "./static/index.html" })], //html 파일에 번들링된 js 파일 삽입해주고 번들링된 결과가 저장되는 폴더에 옮겨주는 역할
      externals: [nodeExternals()],
      devServer: {
           contentBase: [ //정적파일을 제공할 경로
