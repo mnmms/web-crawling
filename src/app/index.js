@@ -1,4 +1,4 @@
-// import { getAllInfo } from './app';
+// import { getAllInfo } from './scraping';
 
 let state = {
      value: ''
